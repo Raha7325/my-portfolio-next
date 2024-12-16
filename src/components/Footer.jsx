@@ -1,7 +1,12 @@
+import { useRouter } from "next/router";
+
 const Footer = () => {
+    const router = useRouter()
+
+    const showFooter = router.pathname === '/contact' ? 'hidden' : 'block'
     return (
         <footer
-            className=" text-center text-surface/75  dark:text-white/75 lg:text-left">
+            className={`${showFooter} text-center text-surface/75  dark:text-white/75 lg:text-left`} >
             <div
                 className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-white/10">
                 <div className="flex justify-center">
