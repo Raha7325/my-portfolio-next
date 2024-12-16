@@ -1,11 +1,14 @@
 const Home = () => {
     return (
-        <div className="flex justify-center align-item-middle">
-            <strong className="text-9xl">
-                Hello, I'm Raha
+        <div className="flex justify-center items-center h-full">
+            <strong className="text-6xl md:text-9xl linear-color-title">
+                Hi,
+                <br className="block md:hidden" />
+                I'm Raha
                 <br />
-                FrontEnd Developer
+                a FrontEnd Developer
             </strong>
+            <div className="background-homePage"></div>
         </div>
     )
 }
