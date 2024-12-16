@@ -5,9 +5,10 @@ import Head from 'next/head';
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-        <Head>
-            <title>Raha Kashir Portfolio</title>
-        </Head>
+      <Head>
+        <link rel="icon" href="/images/favicon.ico" />
+        <title>Raha Kashir Portfolio</title>
+      </Head>
       <Component {...pageProps} />
     </Layout>
   );
