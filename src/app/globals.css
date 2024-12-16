@@ -2,20 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.background-homePage {
+  background-image: url('/images/background-homePage.jpeg');
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
+  position:fixed; 
+  top: 0;
+  left: 0;
+  z-index: -1; 
+}
+.background-color {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100%;
+  position:absolute; 
+  top: 0;
+  left: 0;
+  z-index: -1; 
+}
+.linear-color-title {
+  background-image: linear-gradient(to right, #000000 0%, #dc77ad 100%);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text; /* For modern browsers */
+  color: transparent; /* Makes the text itself transparent */
+  font-weight: bold;
 }
