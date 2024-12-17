@@ -8,8 +8,8 @@ const Header = () => {
         <nav>
             <div className="max-w-screen-xl px-4 py-3 mx-auto flex justify-between">
                 <Link href="/" className="cursor-pointer">
-                    {/* <Image src={`${basePath}/images/Logo.png`}  className="rounded-full object-cover h-[70px]" alt="Faezeh(raha) kashir" width={70} height={70} /> */}
-                    <Image src='/my-portfolio/images/Logo.png' className="rounded-full object-cover h-[70px]" alt="Faezeh(raha) kashir" width={70} height={70} />
+                    <Image src={`${basePath}/images/Logo.png`}  className="rounded-full object-cover h-[70px]" alt="Faezeh(raha) kashir" width={70} height={70} />
+                    {/* <Image src='/images/Logo.png' className="rounded-full object-cover h-[70px]" alt="Faezeh(raha) kashir" width={70} height={70} /> */}
                 </Link>
                 {basePath}
                 <div className="flex items-center">

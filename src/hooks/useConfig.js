@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useState } from "react";
 
 const  useConfig = () => {
@@ -7,6 +8,7 @@ const  useConfig = () => {
         if(process.env.NODE_ENV === "production") {
             setBasePath('/my-portfolio')
         }
+        setBasePath('')
     }, [])
 
     return {basePath}
