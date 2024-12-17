@@ -10,6 +10,9 @@ const nextConfig = {
         domains: ['/my-portfolio']
     },
     assetPrefix: isProd ? '/my-portfolio/' : '',
+    publicRuntimeConfig: {
+        basePath: isProd ? '/my-portfolio' : '',
+    },
 };
 
 module.exports = nextConfig;
