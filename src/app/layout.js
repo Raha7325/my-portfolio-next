@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import '../public/globals.css';
+import "./globals.css";
 
 export const metadata = {
   title: "Create Next App",
