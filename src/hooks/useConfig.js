@@ -4,7 +4,9 @@ const  useConfig = () => {
     const [basePath, setBasePath] = useState('')
 
     useEffect(() => {
-        setBasePath(process.env.NEXT_PUBLIC_BASE_PATH || '')
+        if(process.env.NODE_ENV === "production") {
+            setBasePath('/my-portfolio')
+        }
     }, [])
 
     return {basePath}
