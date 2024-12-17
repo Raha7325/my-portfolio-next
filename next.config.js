@@ -7,6 +7,7 @@ const nextConfig = {
     reactStrictMode: true,
     images: {
         unoptimized: true,
+        domains: ['/my-portfolio']
     },
     assetPrefix: isProd ? '/my-portfolio/' : '',
 };
