@@ -17,10 +17,10 @@ const Header = () => {
                             <Link href="/about" className="text-gray-900 font-bold hover:underline">About</Link>
                         </li>
                         <li>
-                            <Link href="/contact" className="text-gray-900 font-bold hover:underline">Contact</Link>
+                            <Link href="./contact" className="text-gray-900 font-bold hover:underline">Contact</Link>
                         </li>
                         <li>
-                            <Link href="/cv" className="text-gray-900 font-bold hover:underline">
+                            <Link href="./cv" className="text-gray-900 font-bold hover:underline">
                                 CV</Link>
                         </li>
                     </ul>
