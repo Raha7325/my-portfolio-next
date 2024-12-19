@@ -1,17 +1,14 @@
-"use client"
+"use client";
 import { useEffect, useState } from "react";
 
-const  useConfig = () => {
-    const [basePath, setBasePath] = useState('')
+const useConfig = () => {
+    const [basePath, setBasePath] = useState('');
 
     useEffect(() => {
-        if(process.env.NODE_ENV === "production") {
-            setBasePath('/my-portfolio')
-        }
-        setBasePath('')
-    }, [])
+        setBasePath(process.env.NEXT_PUBLIC_BASE_PATH || '');
+    }, []);
 
-    return {basePath}
-}
+    return { basePath };
+};
 
 export default useConfig;
