@@ -4,7 +4,7 @@ const CV = () => {
         <div className='flex flex-col items-center  w-full'>
             <div className="relative h-full w-full border shadow-lg ">
                 <Image
-                    src="/images/resume.png"
+                    src="./images/resume.png"
                     alt="My Resume"
                     layout="responsive"
                     objectFit="cover"
