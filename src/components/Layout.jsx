@@ -6,9 +6,10 @@ const Layout = ({ children }) => {
     const router = useRouter();
 
     const isHomePage = router.pathname === "/"
+    const layoutClasses = isHomePage ? "background-homePage" : "bg-pink-100";
+    const backgroundStyle = isHomePage ? { backgroundImage: `url('/images/background-homePage.jpeg')` } : {};
     return (
-        <div className={`flex flex-col min-h-screen ${isHomePage ? "background-homePage" : "bg-pink-100"}`} style={isHomePage ? { backgroundImage: `url('./images/background-homePage.jpeg')` } : {}}
-        >
+        <div className={`flex flex-col min-h-screen ${layoutClasses}`} style={backgroundStyle}>
             <Header />
             <main className="flex-grow">
                 <div className="container mx-auto p-4">
