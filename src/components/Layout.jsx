@@ -5,10 +5,10 @@ import Footer from './Footer';
 const Layout = ({ children }) => {
     const router = useRouter();
 
-    const background = router.pathname === "/" ? "background-homePage " : "bg-pink-100"
-    console.log(background)
+    const isHomePage = router.pathname === "/"
     return (
-        <div className={`flex flex-col min-h-screen ${background}`} >
+        <div className={`flex flex-col min-h-screen ${isHomePage ? "background-homePage" : "bg-pink-100"}`} style={isHomePage ? { backgroundImage: `url('/images/background-homePage.jpeg')` } : {}}
+        >
             <Header />
             <main className="flex-grow">
                 <div className="container mx-auto p-4">
