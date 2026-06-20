@@ -2,14 +2,11 @@
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
-    basePath: '/my-portfolio',
+    basePath: isProd ? '/my-portfolio' : '',
     output: 'export',
     reactStrictMode: true,
     images: {
         unoptimized: true,
-    },
-    publicRuntimeConfig: {
-        basePath: isProd ? '/my-portfolio' : '',
     },
 };
 

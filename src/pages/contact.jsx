@@ -1,4 +1,4 @@
-const About = () => {
+const Contact = () => {
     return (
         <div className="grid grid-cols-2 gap-2">
             <div className="text-9xl">
@@ -23,7 +23,7 @@ const About = () => {
                             <span className="ml-2">linkedIn</span>
                         </div>
                     </a>
-                    <a href="https://linkedin.com/in/faezehkashir" target="_blank" >
+                    <a href="https://github.com/Raha7325" target="_blank" >
                         <div className="flex">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -43,4 +43,4 @@ const About = () => {
         </div>
     )
 }
-export default About;
+export default Contact;
