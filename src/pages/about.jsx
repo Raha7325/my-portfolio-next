@@ -16,11 +16,11 @@ const projects = [
     {
         name: 'SafarAra',
         desc: 'A full-service online travel agency (OTA) platform for flight bookings, hotel reservations, tours, and visa services.',
-        tech: ['Next.js', 'TypeScript', 'ShadCn', 'directus'],
+        tech: ['Next.js', 'React', 'TypeScript', 'ShadCn', 'Directus'],
         url: 'https://safarara.com',
     },
     {
-        name: 'Google Translate Clone',
+        name: 'Google Translate',
         desc: 'A translation app built with Vue 3 and TypeScript, integrating external APIs. Originally developed as a technical challenge for Chabok.',
         tech: ['Vue 3', 'TypeScript', 'Axios', 'Tailwind CSS'],
         url: 'https://github.com/Raha7325/GoogleTranslate',
