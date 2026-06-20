@@ -16,7 +16,7 @@ const projects = [
     {
         name: 'SafarAra',
         desc: 'A full-service online travel agency (OTA) platform for flight bookings, hotel reservations, tours, and visa services.',
-        tech: ['Vue.js', 'TypeScript', 'Tailwind CSS', 'Vite'],
+        tech: ['Next.js', 'TypeScript', 'ShadCn', 'directus'],
         url: 'https://safarara.com',
     },
     {
