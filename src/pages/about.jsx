@@ -7,6 +7,18 @@ const projects = [
         tech: ['Next.js', 'React', 'Tailwind CSS'],
         url: 'https://github.com/Raha7325/my-portfolio-next',
     },
+     {
+        name: 'Pinkinator',
+        desc: 'An npm package that generates random pink colors. Built and published to the npm registry.',
+        tech: ['TypeScript', 'Vite', 'npm'],
+        url: 'https://www.npmjs.com/package/pinkinator',
+    },
+    {
+        name: 'SafarAra',
+        desc: 'A full-service online travel agency (OTA) platform for flight bookings, hotel reservations, tours, and visa services.',
+        tech: ['Vue.js', 'TypeScript', 'Tailwind CSS', 'Vite'],
+        url: 'https://safarara.com',
+    },
     {
         name: 'Google Translate Clone',
         desc: 'A translation app built with Vue 3 and TypeScript, integrating external APIs. Originally developed as a technical challenge for Chabok.',
@@ -18,12 +30,6 @@ const projects = [
         desc: 'A React-based lottery application for monthly draw management.',
         tech: ['React', 'JavaScript'],
         url: 'https://github.com/Raha7325/monthly-lottery',
-    },
-    {
-        name: 'Pinkinator',
-        desc: 'An npm package that generates random pink colors. Built and published to the npm registry.',
-        tech: ['TypeScript', 'Vite', 'npm'],
-        url: 'https://www.npmjs.com/package/pinkinator',
     },
 ];
 
