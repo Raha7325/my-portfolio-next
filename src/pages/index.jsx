@@ -12,25 +12,25 @@ const slideLeft = {
 const Home = () => {
     return (
         <motion.div
-            className="max-w-screen-xl px-4 py-3 mx-auto feat flex flex-col justify-center items-start h-full pl-8 container mx-auto"
+            className="max-w-screen-xl py-3 mx-auto feat flex flex-col justify-center items-start h-full container"
             variants={stagger}
             initial="initial"
             animate="animate"
         >
             <motion.strong
-                className="text-6xl md:text-9xl linear-color-title text-left leading-tight"
+                className="text-5xl md:text-9xl linear-color-title text-left leading-tight"
                 variants={slideLeft}
             >
                 Hi,
             </motion.strong>
             <motion.span
-                className="text-6xl md:text-9xl linear-color-title text-left leading-tight"
+                className="text-5xl md:text-9xl linear-color-title text-left leading-tight"
                 variants={slideLeft}
             >
                 I'm Raha
             </motion.span>
             <motion.span
-                className="text-4xl md:text-7xl linear-color-title text-center mt-4"
+                className="text-4xl md:text-7xl linear-color-title text-left mt-4"
                 variants={slideLeft}
             >
                 a FrontEnd Developer
