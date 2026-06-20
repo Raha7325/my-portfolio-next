@@ -1,34 +1,44 @@
-import Image from 'next/image';
+import { usePinkinator } from '../hooks/usePinkinator';
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const CANVA_EMBED = 'https://www.canva.com/design/DAF-hI9cazk/vcbGZqtizElL6-uU-pER8Q/view?embed';
+const CANVA_LINK = 'https://www.canva.com/design/DAF-hI9cazk/vcbGZqtizElL6-uU-pER8Q/view';
 
 const CV = () => {
+    const accent = usePinkinator([]);
+
     return (
-        <div className='flex flex-col items-center  w-full'>
-            <div className="relative h-full w-full border shadow-lg ">
-                <Image
-                    src={`${basePath}/images/resume.png`}
-                    alt="My Resume"
-                    layout="responsive"
-                    objectFit="cover"
-                    width={1920}
-                    height={1080}
-                    priority
-                />
+        <div className="max-w-4xl mx-auto mt-12 mb-12">
+            <div className="mb-2" style={{ width: '80px', height: '4px', backgroundColor: accent, borderRadius: '2px' }} />
+            <h1 className="text-5xl font-bold mb-3 text-gray-800">Resume / CV</h1>
+            <p className="text-lg text-gray-600 mb-8">
+                Always up-to-date — powered by Canva.
+            </p>
+
+            <div className="relative w-full rounded-xl overflow-hidden shadow-lg border" style={{ borderColor: `${accent}44` }}>
+                <div className="relative w-full" style={{ paddingTop: '141.4%' }}>
+                    <iframe
+                        src={CANVA_EMBED}
+                        className="absolute inset-0 w-full h-full"
+                        allowFullScreen
+                        loading="lazy"
+                        title="My Resume"
+                    />
+                </div>
             </div>
-            <div className="mt-4">
-                <button className="bg-pink-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
-                    <svg
-                        className="fill-current w-4 h-4 mr-2"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                    >
+
+            <div className="mt-6 flex justify-center">
+                <a
+                    href={CANVA_LINK}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-white font-semibold transition-all hover:scale-105 shadow-md"
+                    style={{ backgroundColor: accent }}
+                >
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
                     </svg>
-                    <a href={`${basePath}/files/Faezeh(Raha)kashir.pdf`} download="rahaKashir.pdf">
-                        Download
-                    </a>
-                </button>
+                    Open in Canva
+                </a>
             </div>
         </div>
     )
