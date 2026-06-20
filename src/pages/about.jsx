@@ -20,10 +20,10 @@ const projects = [
         url: 'https://github.com/Raha7325/monthly-lottery',
     },
     {
-        name: 'Vue Template',
-        desc: 'Production-ready starter template with Vue 3, TypeScript, Vite, and Tailwind CSS.',
-        tech: ['Vue 3', 'TypeScript', 'Vite', 'Tailwind CSS'],
-        url: 'https://github.com/Raha7325/template-vue',
+        name: 'Pinkinator',
+        desc: 'An npm package that generates random pink colors. Built and published to the npm registry.',
+        tech: ['TypeScript', 'Vite', 'npm'],
+        url: 'https://www.npmjs.com/package/pinkinator',
     },
 ];
 
