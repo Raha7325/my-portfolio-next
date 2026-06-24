@@ -46,9 +46,9 @@ const About = () => {
     return (
         <div className="max-w-4xl mx-auto mt-12 mb-12">
             <div className="mb-2" style={{ width: '80px', height: '4px', backgroundColor: accent, borderRadius: '2px' }} />
-            <h1 className="text-5xl font-bold mb-8 text-gray-800">About Me</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800">About Me</h1>
 
-            <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+            <div className="space-y-6 text-lg text-gray-700 leading-relaxed text-justify">
                 <p className="text-2xl font-medium text-gray-800">
                     I'm Raha — a FrontEnd Developer who turns ideas into intuitive, pixel-perfect web experiences.
                 </p>

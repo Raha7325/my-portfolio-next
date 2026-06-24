@@ -17,7 +17,7 @@ const Footer = () => {
         <footer className="text-center text-surface/75 dark:text-white/75 lg:text-left">
             {!isContact && (
             <div
-                className="flex items-center justify-center border-b-2 border-neutral-200 pt-6 dark:border-white/10">
+                className="flex items-center justify-center border-b-2 border-neutral-200 pt-6 pb-3 dark:border-white/10">
                 <div className="flex justify-center">
                     <a href="https://linkedin.com/in/faezehkashir" target="_blank" className="me-6 [&>svg]:h-6 [&>svg]:w-6">
                         <svg

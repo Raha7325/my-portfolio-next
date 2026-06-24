@@ -4,13 +4,13 @@ const Contact = () => {
     const accent = usePinkinator([]);
 
     return (
-        <div className="max-w-5xl mx-auto mt-12 mb-12">
+        <div className="max-w-5xl mx-auto my-6 md:my-12 max-md:overflow-hidden">
             <div className="mb-2" style={{ width: '80px', height: '4px', backgroundColor: accent, borderRadius: '2px' }} />
-            <h1 className="text-5xl font-bold mb-12 text-gray-800">Get in Touch</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-3 md:mb-12 text-gray-800">Get in Touch</h1>
 
             <div className="grid md:grid-cols-2 gap-10">
                 <div>
-                    <p className="text-3xl md:text-4xl font-light text-gray-600 leading-snug">
+                    <p className="text-2xl md:text-4xl font-light text-gray-600 leading-snug">
                         want to start a new project?<br />
                         or just say hello.
                     </p>

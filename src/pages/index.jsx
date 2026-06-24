@@ -40,7 +40,7 @@ const Home = () => {
     return (
         <>
         <motion.div
-            className="max-w-screen-xl py-3 mx-auto feat flex flex-col  items-start h-full container"
+            className="max-w-screen-xl px-4 py-3 mx-auto flex flex-col max-md:justify-between items-start max-md:flex-1"
             variants={stagger}
             initial="initial"
             animate="animate"
