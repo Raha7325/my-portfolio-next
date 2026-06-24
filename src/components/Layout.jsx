@@ -22,8 +22,8 @@ const Layout = ({ children }) => {
     return (
         <div className={`flex flex-col min-h-screen ${layoutClasses}`} style={backgroundStyle}>
             <Header />
-            <main className="flex-grow">
-                <div className="container mx-auto p-4">
+            <main className={`flex-grow ${isHomePage ? 'flex flex-col' : ''}`}>
+                <div className={`container mx-auto p-4 ${isHomePage ? 'flex-1 flex flex-col' : ''}`}>
                     {children}
                 </div>
             </main>
