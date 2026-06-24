@@ -7,7 +7,7 @@ const CV = () => {
     const accent = usePinkinator([]);
 
     return (
-        <div className="max-w-4xl mx-auto mt-12 mb-12">
+        <div className="max-w-4xl mx-auto mt-12">
             <div className="mb-2" style={{ width: '80px', height: '4px', backgroundColor: accent, borderRadius: '2px' }} />
             <h1 className="text-5xl font-bold mb-3 text-gray-800">Resume / CV</h1>
             <p className="text-lg text-gray-600 mb-8">

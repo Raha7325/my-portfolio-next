@@ -38,6 +38,7 @@ const Home = () => {
     }, [endColor]);
 
     return (
+        <>
         <motion.div
             className="max-w-screen-xl py-3 mx-auto feat flex flex-col  items-start h-full container"
             variants={stagger}
@@ -60,7 +61,7 @@ const Home = () => {
                 I'm Raha
             </motion.span>
             <motion.span
-                className="text-4xl md:text-7xl linear-color-title text-left mt-4 block w-full"
+                className="text-3xl md:text-7xl linear-color-title text-left xl:mt-4 block w-full"
                 style={{ backgroundImage: gradient }}
                 variants={slideLeft}
             >
@@ -69,7 +70,7 @@ const Home = () => {
             </div>
 
             <motion.div
-                className="w-full max-w-sm max-md:mt-auto md:mt-2"
+                className="w-full max-w-sm max-md:mt-auto md:mt-7"
                 variants={slideLeft}
             >
                 <div className="rounded-xl border border-gray-200/40 bg-white/20 backdrop-blur-sm p-6 shadow-sm text-center">
@@ -107,9 +108,9 @@ const Home = () => {
                     </p>
                 </div>
             </motion.div>
-
-            <div className="background-homePage"></div>
         </motion.div>
+        <div className="background-homePage"></div>
+        </>
     )
 }
 
