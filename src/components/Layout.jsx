@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
         ? { backgroundImage: `url(${basePath}/images/background-homePage.jpeg)` }
         : { backgroundImage: `linear-gradient(135deg, ${pinkColor}33 0%, #FCE7F3 60%, #FFFFFF 100%)` };
     return (
-        <div className={`flex flex-col min-h-screen ${layoutClasses}`} style={backgroundStyle}>
+        <div className={`flex flex-col min-h-dvh ${layoutClasses}`} style={backgroundStyle}>
             <Header />
             <main className={`flex-grow ${isHomePage ? 'max-md:flex max-md:flex-col' : ''}`}>
                 <div className={`container mx-auto p-4 ${isHomePage ? 'max-md:flex-1 max-md:flex max-md:flex-col' : ''}`}>
